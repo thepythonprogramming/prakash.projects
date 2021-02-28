@@ -19,12 +19,12 @@ class InstagramAutomation:
         bot = Bot()
         caption = self.reading_first_file()[:-4]  # to remove ".jpj" from the file name
         bot.login(username=self.user_name, password=self.password)
-        bot.upload_photo('C:\\Users\\reddy\\OneDrive\\Desktop 1\\Testing_program' + str(self.reading_first_file()),
+        bot.upload_photo('C:\\Users\\reddy\\OneDrive\\Desktop 1\\Testing_program\\' + str(self.reading_first_file()),
                          caption=caption + self.description)
 
     # for deleting the picture after uploading
     def delete_file(self):
-        os.remove('C:\\Users\\reddy\\OneDrive\\Desktop 1\\Testing_program' + str(self.reading_first_file()))
+        os.remove('C:\\Users\\reddy\\OneDrive\\Desktop 1\\Testing_program\\' + str(self.reading_first_file()))
 
 
 # your own hashtags and description
